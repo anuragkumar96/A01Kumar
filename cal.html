@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
   <title>ANURAG</title>
+
+ <script src="cal.js"></script>
 <link  rel="stylesheet" href="anurag.css"/> 
-<!--link rel="stylesheet" href="bootstrap.css"></head-->
+<link rel="stylesheet" href="bootstrap.css">
+</head>
 <body>
 
 <header class="main-header">
-    <img src="anurag3.jpg" alt=" " width="130" height="130">
+    <img src="anurag3.jpg" alt="Your image" width="130" height="130">
   <!--p id="cent"><strong>ANURAG KUMAR</strong></p-->
 </header>
   <nav class="navbar navbar-inverse bg-primary">
@@ -63,38 +66,57 @@
     </nav>
 
     <div class="container">
-      <header ><h2>PRICE CALCULATOR</h2></header>
+      <header ><h2>SIMPLE INTEREST CALCULATOR</h2></header>
  
  
-      <hr>
+      <!--hr>
 
    
 	<form class="col-md-4">
-      <div class="form-group">
+      
+    
+    <div class="form-group">
+
         <label>Principle Amount</label>
-        <input class="form-control" placeholder="Enter Principle Amount">
+          <input id="p" class="form-control" placeholder="Enter Principle Amount">
       </div>
       <div class="form-group">
-          <label>Starting Date</label>
-          <input class="form-control" placeholder="Enter Start Date">
+          <label>Rate</label>
+          <input id="r" class="form-control" placeholder="Enter Rate">
         </div>
         <div class="form-group">
             <label>Ending Date</label>
-            <input class="form-control" placeholder="Enter End Date">
+            <input  id="n" class="form-control" placeholder="Enter No. of Years:">
           </div>
-          <div class="form-group">
-              <label>Rate of Interest</label>
-              <input class="form-control" placeholder="Enter Rate of Interest">
-            </div>
+          
 
-            <button type="submit" class="btn btn-default">Submit</button>
+
+            <button onclick="calculate()" type="submit" class="btn btn-default">Submit</button>
             <br><br>
       <div class="form-group">
         <label>Interest Amount</label>
-        <textarea class="form-control" placeholder="Output" rows="3"></textarea>
+        <textarea id="result" class="form-control" placeholder="Output" ></textarea>
       </div>
-    </form>
+      Amount: <input id="p"><br/>
+      Rate: <input id="r"><br/>
+      No. of Years: <input id="n"><br/>
 
+      <button onclick="calculate()">Calculate</button>
+
+      <p id="result"></p>
+    
+    
+    </form-->
+    
+    
+    <label>Principle Amount</label><br/>  <input id="p" class="form-control" placeholder="Enter Principle Amount"><br/>
+    <label>Interest Amount</label><br/> <input id="r" class="form-control" placeholder="Enter Rate"><br/>
+    <label>No. of Years:</label><br/> <input  id="n" class="form-control" placeholder="Enter No. of Years:"><br/>
+
+    <button onclick="calculate()" type="submit" class="btn btn-default">Submit</button><br>
+
+    <textarea id="result" class="form-control" placeholder="Output" ></textarea>
+ 
 
   </div>
 
